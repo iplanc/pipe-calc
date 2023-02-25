@@ -102,7 +102,6 @@ export default {
       //this.result = subPipes + "<br />" + rawPipes + this.method;
     },
 
-    // FIXME: if 判断结果完全相反
     recursion(subs, raw, path) {
       var that = this;
       subs.forEach(function (each) {
