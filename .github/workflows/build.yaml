@@ -23,4 +23,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: setup
-      run: git push
+      run: git checkout page && git push
