@@ -1,0 +1,26 @@
+on:
+  tag:
+    branches:
+      - master
+
+jobs:
+  install:
+    name: install
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup
+      run: npm i
+  build:
+    needs: install
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup
+      run: npm run build
+  push:
+    needs: build
+    name: push
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup
+      run: git push
