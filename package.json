@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "element-plus": "^2.2.32",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@volar-plugins/vetur": "latest",
